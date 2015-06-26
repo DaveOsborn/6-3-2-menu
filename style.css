@@ -1,0 +1,310 @@
+.col {
+  display: block;
+  float: left;
+  width: 100%;
+  margin-bottom: 2%;
+  min-height: 100%;
+}
+
+.col:first-child {
+  margin-left: 0;
+}
+
+.mega-menu h3 a, .mega-menu ul, .mega-menu li {
+	padding: 0!important;
+}
+
+ .mega-menu h3, .mega-menu li, .mega-menu img {
+ 	margin: 0;
+ }
+
+/* Mega menu button and search drop down (desktop view only) */
+.pull-down {
+	z-index: 2;
+	width: 80px;
+	margin: auto;
+	display: none;
+}
+.pull-down  >  article {
+	margin-top: -40px;
+}
+
+
+#mega-menu-pull-down {
+background-color: #CB0D07;
+display: none;
+margin: -20px auto 0 auto;
+position: relative;
+text-align: center;
+height: 60px;
+width: 60px;
+border-radius: 50%;
+z-index: 2000;
+top: 20px;
+}
+#mega-menu-pull-down button {
+background-color: #CB0D07;
+background-image: url("#");
+background-position: 50% 85%;
+background-repeat: no-repeat;
+background-color: transparent;
+color: #FFF;
+text-decoration: none;
+border: none;
+font-size: .9em;
+z-index: 3000;
+padding: 14px 0 28px 0;
+width: 60px;
+
+}
+ #mega-menu-pull-down button, x:-moz-any-link { /* Firefox hack */
+ 	background-position: 51.5% 100%;
+}
+#mega-menu-pull-down button.expanded {
+	background-image: url("#");
+}
+
+@-webkit-keyframes subtle-bounce {
+  0%, 100% { background-position: 50% 100%  }
+  50% { background-position: 50% 110% }
+}
+@-moz-keyframes subtle-bounce {
+  0%, 100% { background-position: 50% 100%  }
+  50% { background-position: 50% 110% }
+}
+@-o-keyframes subtle-bounce {
+  0%, 100% { background-position: 50% 100%  }
+  50% { background-position: 50% 110% }
+}
+@keyframes subtle-bounce {
+  0%, 100% { background-position: 50% 100%  }
+  50% { background-position: 50% 110% }
+}
+
+#mega-menu-pull-down button {
+    /*animation-name*/
+    -webkit-animation-name:subtle-bounce;
+       -moz-animation-name:subtle-bounce;
+        -ms-animation-name:subtle-bounce;
+         -o-animation-name:subtle-bounce;
+            animation-name:subtle-bounce;
+    /*animation-duration*/
+    -webkit-animation-duration:500ms;
+       -moz-animation-duration:500ms;
+        -ms-animation-duration:500ms;
+         -o-animation-duration:500ms;
+            animation-duration:500ms;
+    /*animation-iteration-count*/
+    -webkit-animation-iteration-count:3;
+       -moz-animation-iteration-count:3;
+        -ms-animation-iteration-count:3;
+         -o-animation-iteration-count:3;
+            animation-iteration-count:3;
+    /*animation-delay*/
+    -webkit-animation-delay:4s;
+       -moz-animation-delay:4s;
+        -ms-animation-delay:4s;
+         -o-animation-delay:4s;
+            animation-delay:4s;
+}
+
+#mega-menu-pull-down button.hasBeenInteractedWith {
+    /*animation-iteration-count*/
+    /*Note: When the mega-menu has been expanded before the animation occurs, it will be prevented*/
+    -webkit-animation-iteration-count:0;
+       -moz-animation-iteration-count:0;
+        -ms-animation-iteration-count:0;
+         -o-animation-iteration-count:0;
+            animation-iteration-count:0;
+}
+/* Mega menu button (mobile view only) */
+#mega-menu-mobile {
+	height: 48px;
+	width: 40px;
+	float: left;
+	display: block;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+}
+#mega-menu-mobile button {
+	height: 40px;
+	width: 40px;
+	background: url("#") center no-repeat;
+	border: 0px;
+	z-index: 2;
+	background-color: #cb0d07;
+	border-radius: 50%;
+}
+
+/* ------------- 4.3 MEGA MENU ------------- */
+
+/* Mega-menu container */
+.mega-menu {
+	padding: 0.5em 1em 0 1em;
+	position: relative;
+	z-index: 1;
+	display: block;
+
+}
+
+.js .mega-menu {
+	display: none;
+}
+
+/* Turn on mega-menu container for <noscript >  alternative */
+noscript .mega-menu {
+	display: block;
+}
+/* Custom mega menu h3 heading (which includes show/hide facility at mobile view) */
+.mega-menu h3 {
+	background: url("#") no-repeat 5px 12px;
+	padding: 5px 5px 5px 22px;
+	cursor: pointer;
+	display: block;
+	text-shadow: none;
+}
+.mega-menu h3.expanded {
+	background-image: url("#");
+}
+
+/* Custom mega menu list style */
+.mega-menu ul {
+	margin: 10px 0;
+	list-style: none;
+}
+.mega-menu li {
+	font-size: 0.9em;
+	list-style-image: none;
+	border-top: 1px dotted #192132;
+}
+.mega-menu li:first-child {
+	border-top: 0;
+}
+.mega-menu li:last-child {
+	border-bottom: 0;
+}
+/* Custom mega menu link */
+.mega-menu a {
+	color: #fff;
+	display: block;
+	padding: 4px;
+}
+/* Custom mega menu paragraph */
+.mega-menu p {
+	font-size: 0.9em;
+}
+.mega-menu ul {
+	display: none;
+	padding-bottom: 10px;
+}
+.mega-menu span {
+	background-image: none;
+}
+/* Add images to mega menu */
+.mega-menu img {
+	max-width: 100%;
+}
+.mega-menu img:hover {
+	opacity: 0.9;
+	cursor: pointer;
+}
+
+.mega-menu h3:hover {
+	text-decoration: underline;
+}
+
+.mega-menu h3 > a,
+a + h3 > a,
+.breather > h3 > a,
+.bigTime {
+	margin-top: .1em;
+}
+
+.mega-menu a:focus {
+	background: #FCE45C;
+	color: #000;
+	text-decoration: underline;
+	border: none;
+}
+
+@media only screen and (min-width: 480px) {
+	/* Mega menu */
+	.mega-menu ul {
+		display: block;
+		margin: 0 0;
+	}
+	.mega-menu-group {
+		width: 48%;
+		margin-top: 10px;
+		margin-left: 2%;
+	}
+
+	.mega-menu-group:nth-child(3) {
+		margin-left: 0;
+	}
+	.mega-menu-group:nth-child(5) {
+		clear: both;
+	}
+
+	.mega-menu-group div {
+		height: 100%;
+	}
+	/* hides secondary section homepage link at all sizes above smartphone */
+	.mega-menu li.mobileOnly {
+		display: none;
+	}
+	/* Turn off show/hide image for mega menu h3 for desktop */
+	.mega-menu h3 {
+		background-image: none;
+		padding-left: 2px;
+	}
+
+}
+
+@media only screen and (min-width: 768px) {
+	
+	/* Mega menu splits to 3rds */
+	.mega-menu-group {
+		width: 31.3%;
+		margin-left: 2%;
+	}
+	.entry-meta	{
+		width: auto;
+	}
+
+	.mega-menu-group:nth-child(3) {
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	.mega-menu-group:nth-child(4) {
+		margin-left: 0;
+	}
+
+	.mega-menu-group:nth-child(5) {
+		clear: none;
+	}
+
+}
+
+/* Turn off mobile mega menu button, turn on desktop mega menu button */
+#mega-menu-pull-down, .pull-down {
+	display: block;
+}
+#mega-menu-mobile,
+#search-expander {
+	display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+	/* Mega menu */
+	.mega-menu-group {
+		width: 14.6%;
+		margin-left: 2%;
+	}
+	.mega-menu-group:nth-child(4) {
+		margin-left: 2%;
+	}
+
+}
+
